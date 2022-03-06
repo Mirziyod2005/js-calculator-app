@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Calculator APP</title>
+    <link rel="stylesheet" href="css/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4 offset-4 mt-5">
+                <div class="card">
+                    <div class="card-header">
+                        <input type="text" class="form-control text-right" value="0" disabled id="screen">
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="button" class="btn btn-danger btn-block" onclick="clerScreen()">C</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-success btn-block" onclick="addNumber(1)">1</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-success btn-block" onclick="addNumber(2)">2</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-success btn-block" onclick="addNumber(3)">3</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-primary btn-block" onclick="action('add')">+</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-success btn-block" onclick="addNumber(4)">4</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-success btn-block" onclick="addNumber(5)">5</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-success btn-block" onclick="addNumber(6)">6</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-primary btn-block" onclick="action('subtract')">-</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-success btn-block" onclick="addNumber(7)">7</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-success btn-block" onclick="addNumber(8)">8</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-success btn-block" onclick="addNumber(9)">9</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-primary btn-block" onclick="action('multply')">*</button>
+                            </div>
+                            <div class="col-3"><button type="button" class="btn btn-success btn-block" onclick="addNumber(0)">0</button></div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-success btn-block" onclick="addNumber('.')">.</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-primary btn-block" onclick="equal()">=</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-primary btn-block" onclick="action('divays')">/</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-primary btn-block" onclick="delet()">&#8592;</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-primary btn-block" onclick="kvadrat()">X <sup>2</sup></button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-primary btn-block" onclick="ildiz()">√x</button>
+                            </div>
+                            <div class="col-3">
+                            	<button type="button" class="btn btn-primary btn-block" onclick="plusMinus()">&#177;X</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="css/Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="css/Bootstrap/js/popper.min.js"></script>
+    <script src="css/Bootstrap/js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
